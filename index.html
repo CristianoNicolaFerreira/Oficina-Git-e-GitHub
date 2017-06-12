@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <title>Git e GitHub</title>
+    <meta name="viewport" content="width=792, user-scalable=no">
+	  <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+	  <link rel="stylesheet" href="shower/themes/mozilla/styles/style.css">
+  </head>
+  <body class="list">
+    <header class="caption">
+      <h1 style="text-align: center">10ª Semana Tecnológica do Eixo de Informação e Comunicação</h1>
+      <p style="text-align: center">
+        Empreendedorismo e Inovação Tecnológica
+      </p>
+    </header>
+
+    <section class="slide cover" id="Cover">
+      <div>
+        <h2>Oficina de Git e GitHub</h2>
+        <br><br><br><br><br><br><br><br><br><br>
+        <p>
+          Ministrada por <a href="https://www.facebook.com/cristiano.nicola.3">Cristiano Nicola Ferreira</a> e <a href="https://www.facebook.com/danrlei.nascimento.1?fref=ts">Danrlei Silva Do Nascimento</a>
+        </p>
+        <img src="pictures/capa.jpg" alt="">
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="">
+        <h2>Roteiro:</h2>
+        <ol>
+          <li class="color-lightblue">Introdução;</li>
+          <li class="color-nightlyblue">Funcionamento do Git;</li>
+          <li class="color-blue">Estados do Git;</li>
+          <li class="color-lightorange">Primeiros passos com o Git;</li>
+          <li class="color-orange">Trabalhando - Repositório local;</li>
+          <li class="color-lightblue">Primeiros passos com o GitHub;</li>
+          <li class="color-nightlyblue">Trabalhando - Repositório remoto;</li>
+          <li class="color-blue">Considerações finais;</li>
+          <li class="color-lightorange">Dúvidas?</li>
+          <li class="color-orange">Quem está presente?</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="slide red">
+      <div>
+        <h2>Introdução:</h2>
+        <ol>
+          <li>O que é <strong>controle de versão</strong>?
+            <ul>
+              <li>"O controle de versão é um sistema que registra as mudanças feitas em um arquivo ou um conjunto de arquivos ao longo do tempo de forma que você possa recuperar versões específicas." - Scott Chacon</li>
+            </ul>
+          </li>
+          <li>História:
+            <ul>
+              <li>Linus Torvalds;</li>
+              <li>Kernel Linux;</li>
+              <li>Treta com o <strong>Bitkeeper</strong>.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="slide cover">
+      <div>
+        <h2>Funcionamento do Git:</h2>
+        <img src="pictures/funcionamento.png" alt="">
+      </div>
+    </section>
+
+    <section class="slide cover">
+      <div>
+        <h2>Estados do Git:</h2>
+        <img src="pictures/estado.png" alt="">
+      </div>
+    </section>
+
+    <section class="slide blue">
+      <div>
+        <h2>Primeiros passos com o Git:</h2>
+        <ol>
+          <li>Instalação:
+            <ul>
+              <li><code style="color:white">apt-get install git</code></li>
+            </ul>
+          </li>
+          <li>Configurações:
+            <ul>
+              <li>Identidade:
+                <ul>
+                  <li><code style="color:white">git config --global user.name ["nomeDaPessoa"]</code></li>
+                  <li><code style="color:white">git config --global user.email [emailDaPessoa]</code></li>
+                </ul>
+              </li>
+              <li>Vendo Configurações:
+                <ul>
+                  <li><code style="color:white">git config --list</code></li>
+                  <li><code style="color:white">git config [user.name]</code></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Ajuda:
+            <ul>
+              <li><code style="color:white">git help [comando]</code></li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="slide red">
+      <div>
+        <h2>Trabalhando - Repositório local:</h2>
+        <ol>
+          <li>Inicializando Git:
+            <ul>
+              <li><code style="color:white">git init</code></li>
+            </ul>
+          </li>
+          <li>Adicionando para o próximo commit:
+            <ul>
+              <li><code style="color:white">git add .</code></li>
+            </ul>
+          </li>
+          <li>Realizando commit:
+            <ul>
+              <li><code style="color:white">git commit -m ["mensagem"]</code></li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="slide red">
+      <div>
+        <h2>Trabalhando - Repositório local (cont.):</h2>
+        <ol>
+          <li>Desfazendo commit:
+            <ul>
+              <li><code style="color:white">git reset --hard [checksun]</code></li>
+            </ul>
+          </li>
+          <li>Verificando o status:
+            <ul>
+              <li><code style="color:white">git status</code></li>
+            </ul>
+          </li>
+          <li>Verificando registro de commits:
+            <ul>
+              <li><code style="color:white">git log</code></li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="slide blue">
+      <div>
+        <h2>Primeiros passos com o GitHub:</h2>
+        <ol>
+          <li>Criando um novo usuário.
+            <ul>
+              <li><a href="https://github.com/">https://github.com/</a></li>
+            </ul>
+          </li>
+          <li>Conhecendo o sistema.</li>
+          <li>Explicações:
+            <ul>
+              <li>O que é um <strong style="color:white">fork de projeto</strong>?</li>
+              <li>O que é um <strong style="color:white">repositório</strong>?</li>
+              <li>O que é um <strong style="color:white">pull request</strong>?</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="slide red">
+      <div>
+        <h2>Trabalhando - Repositório remoto:</h2>
+        <ol>
+          <li>Criando um repositório.</li>
+          <li>Clonando um repositório:
+            <ul>
+              <li><code style="color:white">git clone [url]</code></li>
+            </ul>
+          </li>
+          <li>Enviando para o GitHub:
+            <ul>
+              <li><code style="color:white">git push</code></li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Perguntas?</h2>
+        <figure class="frame place swing">
+          <img src="pictures/redpanda.jpg" alt="Red panda (Firefox)"/>
+        </figure>
+      </div>
+    </section>
+
+    <script src="shower/scripts.js"></script>
+  </body>
+</html>
